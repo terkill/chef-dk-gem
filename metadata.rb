@@ -7,9 +7,6 @@ version          '1.0.0'
 
 depends 'chef-dk'
 
-supports         'ubuntu', '>= 12.04'
-supports         'debian', '>= 6.0'
-%w(redhat centos scientific amazon).each do |os|
-  supports       os, '>= 6.0'
+%w(redhat centos scientific amazon fedora debian ubuntu).each do |os|
+  supports       os
 end
-supports         'fedora'
