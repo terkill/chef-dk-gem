@@ -1,11 +1,14 @@
 DEPENDENCIES
+  chef-dk
+    git: git://github.com/terkill/chef-dk-chef.git
+    revision: 061ab421540a9527858be837a0079f3b27bf3b1b
   chef-dk-gem
     path: .
     metadata: true
 
 GRAPH
-  chef-dk (3.1.0)
+  chef-dk (3.1.1)
     dmg (~> 2.2)
-  chef-dk-gem (1.0.0)
+  chef-dk-gem (1.0.1)
     chef-dk (>= 0.0.0)
-  dmg (2.2.2)
+  dmg (2.4.0)

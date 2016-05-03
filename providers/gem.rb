@@ -4,6 +4,8 @@ def whyrun_supported?
   true
 end
 
+provides :chef_dk_gem_gem
+
 action :install do
   Chef::Log.debug "Installing chef gem #{new_resource.name}"
   execute "chef exec gem install \
